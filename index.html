@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop list</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    
+    <script src="./index.js"></script>
+</head>
+<body>
+    <header>
+        <a id="home-link" class="home-link" class="hidden" href="#page-type=home">H</a>
+        <h1 class="text-center">SHOP LIST</h1>
+    </header>
+    <main>
+        <section class="page" data-path="home">
+            <h2 class="sub-title">shops</h2>
+            <ul id="shop-list" class="standard-list"></ul>
+            <div class="home-cmd-list">
+                <button class="btn" id="add-shop-cta">+</button>
+            </div>
+            <form id="add-shop-form" class="hidden">
+                <input type="text" id="shop-name" />
+                <button id="add-shop-submit">+</button>
+                <button type="button" id="add-shop-cancel-cta">-</button>
+            </form>
+        </section>
+        <section class="page" data-path="shop">
+            <h2 id="shop-title" class="sub-title"></h2>
+            <ul id="item-list" class="standard-list"></ul>
+            <button class="btn" id="add-items-cta">+</button>
+            <form id="add-item-form" class="hidden">
+                <input type="text" id="item-name" />
+                <button type="button" id="item-quantity-plus">+</button>
+                <span id="item-quantity">1</span>
+                <button type="button" id="item-quantity-minus">-</button>
+                <div>
+                    <button id="add-item-submit">+</button>
+                    <button type="button" id="add-item-cancel-cta">-</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

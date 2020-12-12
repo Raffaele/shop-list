@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+header {
+    background-color: antiquewhite;
+    color: darkgoldenrod;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.sub-title {
+    color: grey;
+}
+
+#add-shop-cta {
+    border: none;
+    background: none;
+    font-weight: bolder;
+    color: blue;
+    font-size: 40px;
+}
+
+.home-cmd-list {
+    text-align: center;
+}
+
+.home-link {
+    position: absolute;
+    margin: 5px;
+    border: 1px cyan solid;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgba(0, 255, 255, .5);
+    text-decoration: none;
+}
+
+.footer-nav {
+    width: 100%;
+    background-color: darkgreen;
+}
+
+.nav-button,
+.nav-button:hover {
+    display: inline-block;
+    border-right: 1px red solid;
+    padding: 2vw;
+    text-decoration: none;
+}
+
+.nav-button:last-child {
+    border-right: none;
+}
+
+.nav-button.active {
+    background-color: gray;
+}
+
+.standard-list {
+    list-style-type: none;
+    padding-inline-start: 5vw;
+    padding-inline-end: 5vw;
+}
+
+.standard-list>li {
+    border: 1px red solid;
+    border-radius: 5px;
+    margin-bottom: 2vh;
+    width: 100%;
+    display: inline-block;
+    padding: 5vw;
+    box-sizing: border-box;
+}
+
+.standard-list>li>a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 5vw;
+}
